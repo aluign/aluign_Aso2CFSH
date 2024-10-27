@@ -1,0 +1,8 @@
+#!/bin/bash
+ls /etc > listado_etc.txt
+cat listado_etc.txt
+lineas=$(wc -l < listado_etc.txt)
+echo "numero total de lineas
+        (archivos y directorios): $lineas"
+palabras=$(wc -w < listado_etc.txt)
+echo "numero total de palabras: $palabras"
